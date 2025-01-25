@@ -14,26 +14,6 @@ export default async function MealDetailsPage({ params }) {
   }
 
   return (
-    <main className={classes.main}>
-      <header className={classes.header}>
-        <div className={classes.image}>
-          <img src={meal.image} alt={meal.name} />
-        </div>
-        <div className={classes.headerText}>
-          <h1 className={classes.title}>{meal.name}</h1>
-          <div className={classes.creator}>
-            Created by{' '}
-            <a href="#" className={classes.link}>
-              {meal.creator}
-            </a>
-          </div>
-          <p className={classes.summary}>{meal.summary}</p>
-        </div>
-      </header>
-      <section className={classes.instructions}>
-        <h2>Instructions</h2>
-        <p>{meal.instructions}</p>
-      </section>
-    </main>
+    <h2>Instructions</h2>
   );
 }
